@@ -1,0 +1,556 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  FILE NAME: TWD.txt
+%  DATE: 11/08/2022
+%  COURSE: CS355
+%  INSTRUCTOR: Dr. Ray
+%  CONTRIBUTORS: Zach Handel, Zack West, Gavin Hopper
+%  DESCRIPTION: IFD file for project 4
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+<game>
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%  PLAYER TYPE  %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	<ptype>hpsp</ptype>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%  AREA #1  %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+	<area>
+		<graphical>
+			<desc>You are stuck at a street intersection in the middle of Atlanta, Georgia. </desc>
+			<image>
+			
+                                                      _________
+_____________________________________________________|  __  __ |____________
+                                      ___----'// \   | '-. '-. |
+                                ___---      //   \   | `-' `-' |
+                          ___---          //____  \  |  SPEED  |
+                    ___---              // /____\ \  |  LIMIT  |
+              ___---                  /// |==__==| \ |_________|
+        ___---                      ///   ~||~~||~ \     | |
+  ___---                          ////     '        \    | |
+--                              ////     //         \    | |
+			</image>
+			<feats>0,0</feats>
+			<combat>0</combat>
+	    	</graphical>
+	</area>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%  AREA #2  %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+	<area>
+		<graphical>
+			<desc>A car. There might be supplies inside of it.</desc>
+			<image>
+			                                 _____________
+                                  ..---:::::::-----------. ::::;;.
+                               .'""""""                  ;;   \  ":.
+                            .''                          ;     \   "\__.
+                          .'                            ;;      ;   \\";
+                        .'                              ;   _____;   \\/
+                      .'                               :; ;"     \ ___:'.
+                    .'--...........................    : =   ____:"    \ \
+               ..-""                               """'  o"""     ;     ; :
+          .--""  .----- ..----...    _.-    --.  ..-"     ;       ;     ; ;
+       .""_-     "--""-----'""    _-"        .-""         ;        ;    .-.
+    .'  .'                      ."         ."              ;       ;   /. |
+   /-./'                      ."          /           _..  ;       ;   ;;;|
+  :  ;-.______               /       _________==.    /_  \ ;       ;   ;;;;
+  ;  / |      """"""""""".---."""""""          :    /" ". |;       ; _; ;;;
+ /"-/  |                /   /                  /   /     ;|;      ;-" | ;';
+:-  :   """----______  /   /              ____.   .  ."'. ;;   .-"..T"   .
+'. "  ___            "":   '""""""""""""""    .   ; ;    ;; ;." ."   '--"
+ ",   __ """  ""---... :- - - - - - - - - ' '  ; ;  ;    ;;"  ."
+  /. ;  """---___                             ;  ; ;     ;|.""
+ :  ":           """----.    .-------.       ;   ; ;     ;:
+  \  '--__               \   \        \     /    | ;     ;;
+   '-..   """"---___      :   .______..\ __/..-""|  ;   ; ;
+       ""--..       """--"        m l s         .   ". . ;
+             ""------...                  ..--""      " :
+                        """"""""""""""""""    \        /
+                                               "------"
+			</image>
+			<feats>0,0</feats>
+			<combat>1</combat>
+		</graphical>
+	</area>
+
+	%%%%%%%%%%%%% ITEMS IN AREA #2 %%%%%%%%%%%%%%
+
+	<item>
+		<graphicaluse>
+			<name>Pliers</name>
+			<image>
+                  _  _...--'''   ``-._
+                    /\\`                 `._
+       __..--''\___/  \\     _.-'```''-._   `;
+      /       .'       \\_.-'            ````
+     |_.-.___|  .-.   .'~
+     | `-'      `-'  ;`._
+      \__       ___.'  //`-._          _,,,
+         ``--../   \  //     `-.,,,..-'    `;
+                    \//,_               _.-'
+                    ^   ```--...___..-
+			</image>
+			<desc>A rusty pair of pliers. They are covered in blood.</desc>
+			<star>2</star>
+			<actmess>You break through a gate located behind the dumpster.</actmess>
+			<actar>3</actar>
+			<rule>3,r,6</rule>
+		</graphicaluse>
+	</item>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%  AREA #3  %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+	<area>
+		<graphical>
+			<desc>A dumpster. It smells better than the walker infested streets, however.</desc>
+			<image>
+                     __________________
+                      \                 \
+                        \                 \
+                          \                 \
+                            \                 \
+           /-------------------------------------
+         //---------------//                  / |
+       //               //                  / __|
+     //               //                  / /  ||
+   //               //                  / /    ||
+ //_______________//   o o            / /      ||      ___/-\___
+------------------------------------/   ------- |     |---------|
+| DO NOT PLAY |         | HOUSEHOLD |           |      | | | | |
+| ON OR AROUND|         |WASTE ONLY |           |      | | | | |
+|--------------         ------------|           |      | | | | |
+|                                   |           |      | | | | |
+-------------------------------------------------      |_______|
+			</image>
+			<feats>0,0</feats>
+			<combat>0</combat>
+		</graphical>
+	</area>
+
+	%%%%%%%%%%%%% ITEMS IN AREA #3 %%%%%%%%%%%%
+
+	<item>
+		<use>
+			<name>Crowbar</name>
+			<desc>A heavy crowbar. It looks unused, but what was someone planning to use it for?</desc>
+			<star>3</star>
+			<actmess>You break open the door to a city building in hopes to escape from the walkers on the streets.</actmess>
+			<actar>1</actar>
+			<rule>1,d,5</rule>
+		</use>
+	</item>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%  AREA #4  %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+	<area>
+		<basic>
+			<desc>You try running west for Huntsville, but you are overtaken by walkers. Try again.</desc>
+			<feats>1,0</feats>
+			<combat>0</combat>
+		</basic>
+	</area>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%  AREA #5  %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+	<area>
+		<basic>
+			<desc>City building. You enter the building in an attempt to flea from the walkers outside.</desc>
+			<feats>0,0</feats>
+			<combat>0</combat>
+		</basic>
+	</area>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%  AREA #6  %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+	<area>
+		<graphical>
+			<desc>Apartment Building. This was onced owned by a family; you see the pictures on the coffee table.</desc>
+			<image>
+0================================================0
+|'.                    (|)                     .'|
+|  '.                   |                    .'  |
+|    '.                |O|                 .'    |
+|      '. ____________/===\_____________ .'      |
+|        :            `\"/`  ______     :     .. |
+|        :     mmmmmmm  V   |--%%--|    :   .'|| |
+|        :     |  |  |      |-%%%%-|    :  |  || |
+|        :     |--|--| @@@  |=_||_=|    :  I  || |
+|        :     |__|__|@@@@@ |_\__/_|    :  |  || |
+|        :             \|/   ____       :  |  || |
+|        :;;       .'``(_)```\__/````:  :  |  || |
+|        :||___   :================:'|  :  | 0+| |
+|        :||===)  | |              | |  :  |  || |
+|        ://``\\__|_|______________|_|__:  I  || |
+|      .'/'    \' | '              | '   '.|  || |
+|    .'           |                |       '. || |
+|  .'                                        '|| |
+|.'                                            '.|
+0================================================0
+			</image>
+			<feats>0,0</feats>
+			<combat>0</combat>
+		</graphical>
+	</area>
+
+	%%%%%%%%%%%%% ITEMS IN AREA #4 %%%%%%%%%%%%
+
+	<item>
+		<graphicaluse>
+			<name>Ladder Step</name>
+			<image>
++--------------------------------------+
+|                                      |
+|                                      |
+|                                      |
+|                                      |
++--------------------------------------+
+			</image>
+			<desc>A missing ladder step. Its covered in trash and sut.</desc>
+			<star>6</star>
+			<actmess>You place the ladder step in the missing spot.</actmess>
+			<actar>3</actar>
+			<rule>3,d,7</rule>
+		</graphicaluse>
+	</item>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%  AREA #7  %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+	<area>
+		<graphical>
+			<desc>Roof of a building. You take a ladder to the roof of a city building to hopefully find some safety.</desc>
+			<image>
+                              
+      .--""L""---___    J  |  |
+      J    J        ""L  L J  J              J----"""J""---__
+       |    |         J  J  L  L_--""|"--L   |       F      J
+        L    L__ ___   L  L |  J     |   J   F      J       F
+     \"""""""   |   """""-----, L    |   J  J       F      |
+      \          L            L L    |   |  |      J      J      _.---"""
+       \         J            | |    |   |  F      F      F     /
+        \         |           J |    |   | J      J      |     /
+         \         L      ___---++...;.++'--__    F     J     /
+          \        J      L""----____ __---""J__--=----_E_   /
+           \        |     J          |       |--__   __--"/ /
+      __    \        L     L         |       F    ""F    / /
+        """--__      J     J         |      J      |    / /
+               "";    |     L        |      |     J    / /
+          __--""" \    L    J        |      F     F   / /
+    __--""         \   J     L       |     J     |   / /
+--""                \   |    J       |     |    J   / /
+                     \   L    L      |     F    F  / /
+                      \  J    J      |    J    |  / /
+                       \  |    L     |    |   J  / /
+                        \  L   J     |    F   F / /
+                         \ J    L    |   J   | / /
+                          \ |  _J    |   |"-J+' /
+                           \-L"  L   |   F     /
+                            \    J   |  J     /
+    '-.                      \    "-.|+'     /
+       '-.                    \             /                   .
+          '-.                  \           /                 .-'
+             '-.             .-'            "-.           .-'
+            hs  '-.       .-'        .         "-.     .-'
+                   '-. .-'         .' '.          '-.-'
+                      '          .'     '.
+			</image>
+			<feats>0,0</feats>
+			<combat>0</combat>
+		</graphical>
+	</area>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%  AREA #8  %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+	<area>
+		<basic>
+			<desc>You look over the edge of the city building to try and survey the area. A hoard of walkers then chases you off the edge and you fall to your death. Try again.</desc>
+			<feats>1,0</feats>
+			<combat>0</combat>
+		</basic>
+	</area>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%  AREA #9  %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+	<area>
+		<graphical>
+			<desc>Apartment bedroom. You notice its a teenagers room and there is a picture of them with their first car.</desc>
+			<image>
+o(=(=(=(=)=)=)=)o
+ !!!!!!}!{!!!!!!                                                ___ 
+ !!!!!} | {!!!!!                                               /   \
+ !!!!}  |  {!!!!     _!_     ()              ()     _!_       | //  |
+ !!!'   |   '!!!    |~@~|    ||______________||    |~@~|      |     |
+ ~@~----+----~@~    |___|    |                |    |___|       \___/
+ !!!    |    !!!      |      |      ~@@~      |      |       _________
+ !!!    |    !!!     ( )     |_______  _______|     ( )     |____-____|
+ !!!____|____!!!  __(___)__  {__~@~__}{__~@~__}  __(___)__  |____-____|
+ !!!=========!!!   |__-__|   %%%%%%%%%%%%%%%%%%   |__-__|   |____-____|
+_!!!_________!!!___|_____|_ %%%%%%%%%%%%%%%%%%%% _|_____|___|____-____|_
+                   |     | %%%%%%%%%%%%%%%%%%%%%% |     |   |/       \|
+                          %%%%%%%%%%%%%%%%%%%%%%%%
+                         %%%%%%%%%%%%%%%%%%%%%%%%%%
+                        %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+                       /!!!!!!!!!!!!!!!!!!!!!!!!!!!!\
+                       !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!  
+                       !!!!!!!!!!!!!!!!!!!!!!!!!!lc!!
+                       `======~@~==========~@~======`
+                      `==============================`
+                     `====~@~==================~@~====`
+                    `==================================`
+                   `==~@~==========================~@~==`
+			</image>
+			<feats>0,0</feats>
+			<combat>0</combat>
+		</graphical>
+	</area>
+
+	%%%%%%%%%%%%% ITEMS IN AREA #9 %%%%%%%%%%%%
+
+	<item>
+		<graphicaluse>
+			<name>Car Keys</name>
+			<image>
+  ooo,    .---.
+ o`  o   /    |\________________
+o`   'oooo()  | ________   _   _)
+`oo   o` \    |/        | | | |
+  `ooo'   `---'         "-" |_|
+			</image>
+			<desc>These are the car keys to the kid who got his first car.</desc>
+			<star>9</star>
+			<actmess>You use the keys on the car. With a little elbow grese, it starts up, but it attracts a hoard of walkers.</actmess>
+			<actar>2</actar>
+			<rule>2,r,10</rule>
+		</graphicaluse>
+	</item>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%  AREA #10  %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+	<area>
+		<graphical>
+			<desc>You make your way down the highway. You decide heading west is your best option because you know of a military base located in Huntsville. You drive off to the sunset leaving the walkers of Atlanta behind you. Stay tuned for IFD TWD Chapter 2.</desc>
+			<image>
+                      			 _..-------++._
+                             _.-'/ |      _||  \"--._
+                       __.--'`._/_\j_____/_||___\    `----.   ---               -----
+                  _.--'_____    |          \     _____    /              ---              -------
+                _j    /,---.\   |        =o |   /,---.\   |_ 
+               [__]==// .-. \\==`===========/==// .-. [\\=[__]]\\=[__]        @@@@@@@               @@@@@@@@@@@
+                 `-._|\ `-' /|___\_________/___|\ `-' /|_.'     @@@@          @@@@@@@@@
+                       `---'                     `---'
+			</image>
+			<feats>0,1</feats>
+			<combat>0</combat>
+		</graphical>
+	</area>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%  AREA #11  %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+	<area>
+		<graphical>
+			<desc>Food pantry. Your mouth waters at all the options!</desc>
+			<image>
+                                	   .-'''''-.
+                                       |'-----'|
+                                      /`-.....-`\
+                                      | <_}     |
+                                      |  .-\-.  |
+                   _,._               | /# `  \ |
+              __.-`    `"""-.         | \     / |
+         ..--'   `"-.        `)_,._   \  '-'-'  /
+       (`            )--.-"```     `"-.`'-----'`
+        '-----------'  (               )
+                        `-------------`
+			</image>
+			<feats>0,0</feats>
+			<combat>1</combat>
+		</graphical>
+	</area>
+
+	%%%%%%%%%%%%% ITEMS IN AREA #11 %%%%%%%%%%%%
+
+	<item>
+		<graphicalconsume>
+			<name>Can of Beans</name>
+			<image>
+      _____ 
+  .-'"     "`-.
+ (             )
+ |`-.._____..-'|
+ |             |
+ |             |
+ |             |
+ |    BEANS    |
+ |             |
+ |             |
+ |             |
+ \             /
+  `-.._____..-' 
+			</image>
+			<desc>The can of beans seem to be expired, but what other options are there?</desc>
+			<star>11</star>
+			<actmess>Not much help, but you do feel a bit replenished.</actmess>
+			<actar>11</actar>
+			<effect>1,10</effect>
+		</graphicalconsume>
+	</item>
+
+	<item>
+		<graphicalconsume>
+			<name>Can of Chicken</name>
+			<image>
+      _____ 
+  .-'"     "`-.
+ (             )
+ |`-.._____..-'|
+ |             |
+ |             |
+ |             |
+ |   Chicken   |
+ |             |
+ |             |
+ |             |
+ \             /
+  `-.._____..-'  
+			</image>
+			<desc>This is a fresh can of chicken.</desc>
+			<star>11</star>
+			<actmess>You find this refreshing.</actmess>
+			<actar>11</actar>
+			<effect>1,15</effect>
+		</graphicalconsume>
+	</item>
+
+	<item>
+		<consume>
+			<name>Jar of Pickles.</name>
+			<desc>There seems to be mold in the jar of pickles.</desc>
+			<star>11</star>
+			<actmess>You feel sick to your stomach after eating that.</actmess>
+			<actar>11</actar>
+			<effect>0,20</effect>
+		</consume>
+	</item>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%  AREA #12  %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+	<area>
+		<graphical>
+			<desc>Dead man. You notice he was packing for an escape.</desc>
+			<image>
+     _\|/_
+      /--\
+      |[]|
+    _] \/ [_
+   /_ `==' _\
+   \\|    |//
+    l\  __/j
+    `|-'##|
+     |#||#|
+     |#||#|
+    _|#||#|_
+   `=="  "==`
+			</image>
+			<feats>0,0</feats>
+			<combat>0</combat>
+		</graphical>
+	</area>
+
+	%%%%%%%%%%%%% ITEMS IN AREA #12 %%%%%%%%%%%%%
+
+	<item>
+		<basic>
+			<name>Bag</name>
+			<desc>This is a bag... but you can now carry more items!</desc>
+			<star>12</star>
+		</basic>
+	</item>
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%  AREA #13  %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+	<area>
+		<graphical>
+			<desc>Hospital. You see walkers with scrubs and lab coats on.</desc>
+			<image>
+                       								 ___
+                                             ___..--'  .`.
+                                    ___...--'     -  .` `.`.
+                           ___...--' _      -  _   .` -   `.`.
+                  ___...--'  -       _   -       .`  `. - _ `.`.
+           __..--'_______________ -         _  .`  _   `.   - `.`.
+        .`    _ /\    -        .`      _     .`__________`. _  -`.`.
+      .` -   _ /  \_     -   .`  _         .` |  Hospital |`.   - `.`.
+    .`-    _  /   /\   -   .`        _   .`   |___________|  `. _   `.`.
+  .`________ /__ /_ \____.`____________.`     ___       ___  - `._____`|
+    |   -  __  -|    | - |  ____  |   | | _  |   |  _  |   |  _ |
+    | _   |  |  | -  |   | |.--.| |___| |    |___|     |___|    |
+    |     |--|  |    | _ | |'--'| |---| |   _|---|     |---|_   |
+    |   - |__| _|  - |   | |.--.| |   | |    |   |_  _ |   |    |
+ ---``--._      |    |   |=|'--'|=|___|=|====|___|=====|___|====|
+ -- . ''  ``--._| _  |  -|_|.--.|_______|_______________________|
+`--._           '--- |_  |:|'--'|:::::::|:::::::::::::::::::::::|
+_____`--._ ''      . '---'``--._|:::::::|:::::::::::::::::::::::|
+----------`--._          ''      ``--.._|:::::::::::::::::::::::|
+`--._ _________`--._'        --     .   ''-----..............LGB'
+     `--._----------`--._.  _           -- . :''           -    ''
+          `--._ _________`--._ :'              -- . :''      -- . ''
+ -- . ''       `--._ ---------`--._   -- . :''
+          :'        `--._ _________`--._:'  -- . ''      -- . ''
+  -- . ''     -- . ''    `--._----------`--._      -- . ''     -- . ''
+                              `--._ _________`--._
+ -- . ''           :'              `--._ ---------`--._-- . ''    -- . ''
+          -- . ''       -- . ''         `--._ _________`--._   -- . ''
+:'                 -- . ''          -- . ''  `--._----------`--._
+			</image>
+			<feats>0,0</feats>
+			<combat>1</combat>
+		</graphical>
+	</area>
+
+	%%%%%%%%%%%%% ITEMS IN AREA #13 %%%%%%%%%%%%%
+
+	<item>
+		<consume>
+			<name>Bandage</name>
+			<desc>I am stuck on Band-Aid brand 'cause Band-Aid's stuck on me.</desc>
+			<star>13</star>
+			<actmess>You feel much better</actmess>
+			<actar>13</actar>
+			<effect>1,25</effect>
+		</consume>
+	</item>
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%  LINKS  %%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%
+	<links>
+		<linkset>2,1,4,3</linkset>
+		<linkset>2,1,13,2</linkset>
+		<linkset>3,3,1,3</linkset>
+		<linkset>4,4,4,1</linkset>
+		<linkset>1,5,11,5</linkset>
+		<linkset>6,9,3,6</linkset>
+		<linkset>3,12,7,8</linkset>
+		<linkset>8,8,7,8</linkset> 
+		<linkset>6,9,9,9</linkset>
+		<linkset>10,10,2,10</linkset>
+		<linkset>11,11,11,5</linkset>
+		<linkset>7,12,12,12</linkset>
+		<linkset>13,13,13,2</linkset>
+	</links>
+</game>
